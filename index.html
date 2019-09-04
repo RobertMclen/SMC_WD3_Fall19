@@ -11,8 +11,69 @@
     <title>Ruben's Site</title>
   </head>
   <body>
-    <h1>Hello, everybody!</h1>
-    <p>This is Ruben.</p>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Link 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 4</a>
+                      </li>
+              </ul>
+             
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="container"> <!-- This is the order, container then row and finally colums -->
+          <div class="row">
+            <div class="col-12 col-md alert-danger"> <!-- You can add 12 colums for row -->          
+              One of three columns
+            </div>
+            <div class="col-12 col-md alert-info">
+              One of three columns
+            </div>
+            <div class="col-12 col-md-6 alert-success">
+              One of three columns
+            </div>
+            <div class="col-12 col-md alert-danger">
+              One of three columns
+            </div>
+            <div class="col-12 col-md alert-info">
+              One of three columns
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid"> <!-- This is the order, container then row and finally colums -->
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 order-md-2 btn-info"> <!-- You can add 12 colums for row -->          
+              Fluid col 1
+            </div>
+            <div class="col-12  col-md-3 col-lg-4 order-md-1 btn-warnig">
+              Fluid col 2        
+            </div>
+            <div class="col-12 col-md col-lg-4 order-md-3 btn-danger">
+              Fluid col 3       
+             </div>
+          </div>
+        </div>
+    </main>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
