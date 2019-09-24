@@ -1,0 +1,8 @@
+.jumbotron {
+  background: url("../images/heroimage.png") top center;
+  padding-top: 10em;
+  padding-bottom: 8em;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
