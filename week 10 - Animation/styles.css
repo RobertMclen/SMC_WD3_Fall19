@@ -1,0 +1,121 @@
+h1 {
+  position: center;
+}
+.triger {
+  width: 260px;
+  height: 80px;
+  left: 400px;
+  top: 220px;
+  border: 10px solid #3b7ca6;
+  background-image: url("images/box.png");
+}
+.box{
+  width: 260px;
+  height: 80px;
+  display: inline-block;
+  background: #3b5eab;
+  pointer-events: none;
+  display: inline-block;
+  position: relative;
+  animation: myframe 2s ease-in-out 0s ;
+}
+.triger:hover .box {
+  transform: translate(220px, 80px )
+  rotate(90deg);
+}
+.triger1 {
+  margin-left: 180px;
+  width: 260px;
+  height: 80px;
+  left: 780px;
+  top: 220px;
+  border: 10px solid #5f3cb5;
+  background-image: url("images/box1.png");
+}
+.box1{
+  width: 260px;
+  height: 80px;
+  display: inline-block;
+  background: #873cba;
+  pointer-events: none;
+  display: inline-block;
+  position: relative;
+  animation: myframe1 2s ease-in-out 0s ;
+}
+.triger1:hover .box1 {
+  transform: translate(-220px, 80px )
+  rotate(90deg);
+}
+.triger2 {
+  width: 260px;
+  height: 80px;
+  left: 400px;
+  top: 220px;
+  border: 10px solid #3b7ca6;
+  background-image: url("images/box2.png");
+}
+.box2{
+  width: 260px;
+  height: 80px;
+  display: inline-block;
+  background: #3b5eab;
+  pointer-events: none;
+  display: inline-block;
+  position: relative;
+  animation: myframe2 2s ease-in-out 0s ;
+}
+.triger2:hover .box2 {
+  transform: translate(220px, 80px )
+  rotate(90deg);
+}
+.triger3 {
+  margin-left: 180px;
+  width: 260px;
+  height: 80px;
+  left: 780px;
+  top: 220px;
+  border: 10px solid #5f3cb5;
+  background-image: url("images/box3.png");
+}
+.box3{
+  width: 260px;
+  height: 80px;
+  display: inline-block;
+  background: #873cba;
+  pointer-events: none;
+  display: inline-block;
+  position: relative;
+  animation: myframe3 2s ease-in-out 0s ;
+}
+.triger3:hover .box3 {
+  transform: translate(-220px, 0px )
+  rotate(90deg);
+}
+@keyframes myframe {
+  0%   {background: #3d5dbe; left: 0px; top: 0px;}
+  25%  {background:#334e9d; left: 0px; top: 300px;}
+  50%  {background: #293e7c ; left: 200px; top: 200px;}
+  75%  {background: #1f2e5c; left: 300px; top: 100px;}
+  100% {background: #151f3c; left: 0px; top: 0px;}
+}
+@keyframes myframe1 {
+  0%   {background:  #6533a1; right: 0px; top: 0px;}
+  25%  {background: #512a80; right: 400px; top: 100px;}
+  50%  {background: #3d2060; right: 100px; top: 200px;}
+  75%  {background: #29163f; right: 300px; top: 0px;}
+  100% {background: #140b20; right: 0px; top: 0px;}
+}
+@keyframes myframe2 {
+  0%   {background: #3d5dbe; left: 0px; top: 0px;}
+  25%  {background:#334e9d; left: 200px; top: -200px;}
+  50%  {background: #293e7c ; left: 100px; top: 100px;}
+  75%  {background: #1f2e5c; left: 300px; top: 0px;}
+  100% {background: #151f3c; left: 0px; top: 0px;}
+}
+@keyframes myframe3 {
+  0%   {background:  #6533a1; right: 0px; top: 0px;}
+  25%  {background: #512a80; right: -100px; top: -200px;}
+  50%  {background: #3d2060; right: 100px; top: 100px;}
+  75%  {background: #29163f; right: 300px; top: -300px;}
+  100% {background: #140b20; right: 0px; top: 0px;}
+} 
