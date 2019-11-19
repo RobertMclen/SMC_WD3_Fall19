@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Table Tennis</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            font-size: 17px;
+        }
+
+        #ttVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        .content {
+            position: fixed;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            padding: 20px;
+        }
+
+        #myBtn {
+            width: 200px;
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            background: #000;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #myBtn:hover {
+            background: #ddd;
+            color: black;
+        }
+
+        #pong {
+            border: 3px solid #FFF;
+            position:absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop id="ttVideo">
+        <source src="ttenis.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+        <h1>Table Tennis</h1>
+        <P>User = Dark Orange <br> Computer = White<br>To play = Place mouse arrow in front of paddle<br> Restart =Refresh Page</P>
+        <button id="myBtn" onclick="myFunction()">Pause Background Video</button>
+    </div>
+    <canvas id="pong" width="600" height="400"></canvas>
+    <script src="pong.js"></script>
+    <script>
+        var video = document.getElementById("ttVideo");
+        var btn = document.getElementById("myBtn");
+
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+    </script>
+</body>
+
+</html>
